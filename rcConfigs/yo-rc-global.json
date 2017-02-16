@@ -1,0 +1,51 @@
+{
+  "generator-gulp:0.2.0": {
+    "promptValues": {
+      "authorname": "lorin.io",
+      "authorurl": "lorin.io"
+    }
+  },
+  "generator-gulp-quickstarter:1.1.0": {
+    "promptValues": {
+      "siteLanguage": "en"
+    }
+  },
+  "generator-simple-web-prototype:1.0.1": {
+    "promptValues": {
+      "frameworks": []
+    }
+  },
+  "generator-gulp-plugin-boilerplate:1.6.0": {
+    "promptValues": {
+      "githubUsername": "k",
+      "website": "http://k"
+    }
+  },
+  "generator-node:1.12.1": {
+    "promptValues": {
+      "authorUrl": "lorin.io"
+    }
+  },
+  "generator-jekyllized:1.0.0-rc.7": {
+    "promptValues": {
+      "projectName": "yo",
+      "projectDescription": "",
+      "projectURL": "http://lorin.io",
+      "authorName": "",
+      "authorEmail": "",
+      "authorURI": "",
+      "authorBio": "",
+      "uploading": "Rsync",
+      "jekyllPermalinks": "pretty"
+    }
+  },
+  "generator-express:2.15.0": {
+    "promptValues": {
+      "type": "MVC",
+      "viewEngine": "Handlebars",
+      "cssPreprocessor": "None",
+      "database": "MongoDB",
+      "buildTool": "Gulp"
+    }
+  }
+}

@@ -1,0 +1,128 @@
+#!/usr/bin/env bash
+
+# Shortcuts
+alias cd..='cd ..'
+alias df='df -h'                          # human-readable sizes
+alias du='du -hcs'
+alias grep='grep --color=tty -d skip'
+alias la='ls -lah --group-directories-first --time-style=+"%d.%m.%Y %H:%M" --color=auto -F'
+alias ll='ls -lh --group-directories-first --time-style=+"%d.%m.%Y %H:%M" --color=auto -F'
+alias ls='ls --group-directories-first --time-style=+"%d.%m.%Y %H:%M" --color=auto -F'
+alias refresh='xrandr --output eDP1 --mode 2560x1440 --auto'
+
+# single character aliases
+alias a='nano /home/loki/.bash.d/aliases && source /home/loki/.bashrc && echo "BASH Reloaded"'
+alias b='nano /home/loki/.bashrc && source /home/loki/.bashrc && echo "BASH Reloaded"'
+alias r='xrandr --output eDP1 --mode 2048x1152 --auto'
+alias h='sudo nano /etc/hosts'
+alias c='cat'
+alias l='clear'
+alias i='sudo -i'
+alias s='sublime'
+alias x='exit'
+alias n='cd /etc/nginx'
+alias t='sudo nginx -t; sudo systemctl restart nginx.service'
+
+# packer/pacman
+alias install='packer --noedit --noconfirm'
+alias packer='packer --noedit'
+alias pacman='sudo pacman'
+alias pinfo='packer -Si'
+alias remove='sudo pacman -Rsc'
+alias search='packer -Ss'
+alias update='sudo pacman -Sy'
+alias upgrade='sudo pacman -Syuu'
+
+# nano
+alias bb="cd $HOME/.bash.d"
+alias nanorc='sudo nano /etc/nanorc'
+alias xaliases='nano /home/loki/.bash_aliases && source /home/loki/.bashrc && echo "BASH Reloaded"'
+alias xb='source /home/loki/.bashrc && echo "BASH Reloaded"'
+alias xbash='nano /home/loki/.bashrc && source /home/loki/.bashrc && echo "BASH Reloaded"'
+
+# commands
+alias visudo='sudo visudo'
+alias service='sudo service'
+alias shutdown='sudo shutdown now'
+alias reboot='sudo reboot'
+alias qq='cmatrix -a -C yellow -b -s -u 7'
+alias matrix='cmatrix -a -C yellow -b -s -u 7'
+alias neo='cmatrix -a -C yellow -b -s -u 7'
+
+# File Utils
+alias cp="sudo -u $USER cp -av"
+alias ln="sudo -u $USER ln -s"
+alias mkdir="sudo -u $USER mkdir -p"
+alias mv='sudo mv'
+alias rm='sudo rm -r'
+alias touch="sudo -u $USER touch"
+
+# File Permissions
+alias chmod='sudo chmod -R'
+alias mod='sudo chmod -R +x'
+alias chown="sudo chown -R $USER:$USER"
+alias own="sudo chown -R $USER:$USER"
+
+# Compression
+alias cat='sudo cat'
+alias tail='sudo tail'
+alias unzip='sudo unzip'
+
+# Networking
+alias iptables='sudo iptables'
+alias ipwan='dig +short myip.opendns.com @resolver1.opendns.com'
+alias ufw='sudo ufw'
+
+# Nginx
+alias k="nano $HOME/.ssh/authorized_keys"
+alias kn="nano $HOME/.ssh/known_hosts"
+alias log='cd /var/log/nginx/'
+alias nginx='sudo nginx'
+alias sshd='sudo nano /etc/ssh/sshd_config; sudo systemctl restart sshd.service; echo "SSH Reloaded"'
+alias www='cd /var/www/'
+alias sshd='sudo nano /etc/ssh/sshd_config && echo "restarting sshd" && sleep 2 && sudo service ssh restart'
+alias xaliases='nano ~/.dotfiles/bash.d/aliases && echo "reloading bash" && source ~/.bashrc'
+alias xapt='sudo nano /etc/apt/sources.list'
+alias xbash="source ~/.bashrc"
+alias xgrub='sudo nano /etc/default/grub && sudo update-grub'
+alias xi3='nano ~/.i3/config'
+alias xkeys='nano ~/.ssh/authorized_keys'
+alias xnet='sudo nano /etc/network/interfaces'
+alias xtables='sudo nano /etc/iptables.conf'
+alias xtermite='nano ~/.config/termite/config'
+alias xtime='sudo nano /etc/ntp.conf'
+alias gparted='sudo gparted &'
+alias ifconfig='sudo ifconfig'
+alias mount='sudo mount'
+alias pip2='sudo -H pip2'
+alias pip='sudo -H pip'
+alias umount='sudo umount'
+alias wpscan='sudo ruby ~/wpscan/wpscan.rb'
+
+# locations
+alias log='cd /var/log'
+alias xnginx='cd /etc/nginx'
+alias ntest='nginx -t'
+alias nreload='sudo service nginx reload'
+alias nstop='sudo service nginx stop'
+alias nsstart='sudo service nginx start'
+
+# SSH Locations
+alias alpha='TERM=xterm ssh -p 160 loki@lorin.io'
+alias epsilon='TERM=xterm ssh -p 170 loki@lorin.io'
+alias delta='TERM=xterm ssh -p 180 loki@lorin.io'
+alias proxima='TERM=xterm ssh -p 200 loki@lorin.io'
+alias omega='TERM=xterm ssh -p 250 loki@lorin.io'
+alias mediahubzn='TERM=xterm ssh -p 150 loki@lorin.io'
+alias cerberus='TERM=xterm ssh loriezn@cerberus.seedboxes.cc'
+alias maildns='TERM=xterm ssh -p 210 loki@lorin.io'
+
+
+alias docker='sudo docker'
+dc() {
+	docker-compose "$1" "$2"
+}
+
+pwhash(){
+	perl -e 'print crypt("password","\$6\$saltsalt\$") . "\n"'
+}
