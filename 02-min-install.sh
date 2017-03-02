@@ -44,7 +44,8 @@ sudo pacman -S base-devel fakeroot jshon expac \
   thunar \
   libmtp \
   gvfs-mtp \
-  numix-themes \
+  numix-gtk-theme \
+  numix-icon-theme-git \
   lm_sensors \
   tumbler \
   eog \

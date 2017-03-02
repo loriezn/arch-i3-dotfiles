@@ -118,7 +118,7 @@ alias cerberus='TERM=xterm ssh loriezn@cerberus.seedboxes.cc'
 alias maildns='TERM=xterm ssh -p 210 loki@lorin.io'
 
 
-alias docker='sudo docker'
+#alias docker='sudo docker'
 dc() {
 	docker-compose "$1" "$2"
 }

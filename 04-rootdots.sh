@@ -1,5 +1,5 @@
 #!/bin/bash
-ROOTDOTS=/home/loki/.dotfiles/.rootdots
+ROOTDOTS=/home/loki/.dotfiles/rootdots
 ROOTDIR=/root
 
 # folders
