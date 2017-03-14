@@ -1,0 +1,27 @@
+authtoken: 7b9mpx58iJ7uBtDNJEavC_6xBLPB2QxnjTQmKhBCiXE
+region: au
+console_ui: true
+inspect_db_size: 50000000
+log_level: info
+log_format: json
+log: /var/log/ngrok.log
+tunnels:
+  lorin:
+    addr: 80
+    proto: http
+    host-header: lorin.dev
+  lorin:
+    addr: 443
+    proto: tls
+    host-header: lorin.dev
+  grayagent:
+    addr: 80
+    proto: http
+    host-header: grayagent.dev
+  grayagent:
+    addr: 443
+    proto: tls
+    host-header: grayagent.dev
+socks5_proxy: "socks5://localhost:9150"
+json_resolver_url: ""
+dns_resolver_ips: []

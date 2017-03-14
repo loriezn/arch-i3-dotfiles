@@ -72,6 +72,8 @@ alias unzip='sudo unzip'
 alias iptables='sudo iptables'
 alias ipwan='dig +short myip.opendns.com @resolver1.opendns.com'
 alias ufw='sudo ufw'
+alias ip='sudo ip'
+alias picocom='sudo picocom'
 
 # Nginx
 alias k="nano $HOME/.ssh/authorized_keys"
@@ -116,6 +118,7 @@ alias omega='TERM=xterm ssh -p 250 loki@lorin.io'
 alias mediahubzn='TERM=xterm ssh -p 150 loki@lorin.io'
 alias cerberus='TERM=xterm ssh loriezn@cerberus.seedboxes.cc'
 alias maildns='TERM=xterm ssh -p 210 loki@lorin.io'
+alias osmc='TERM=xterm ssh osmc@192.168.10.111'
 
 
 #alias docker='sudo docker'
@@ -126,3 +129,11 @@ dc() {
 pwhash(){
 	perl -e 'print crypt("password","\$6\$saltsalt\$") . "\n"'
 }
+
+
+    alias lsp='sudo lsof -i -n -P | grep LISTEN'
+
+    alias cdmod='cd _git/ng-demos/modular'
+
+    alias gadd='git add . -A'
+

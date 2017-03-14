@@ -117,3 +117,5 @@ export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
 export PATH=$PATH:/usr/local/go/bin
+
+[[ -s "/home/loki/.gvm/scripts/gvm" ]] && source "/home/loki/.gvm/scripts/gvm"

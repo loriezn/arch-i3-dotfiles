@@ -43,7 +43,7 @@ set $default_gaps_inner 10
 set $default_gaps_outer 5
 gaps inner $default_gaps_inner
 gaps outer $default_gaps_outer
-smart_gaps on
+#smart_gaps on
 
 workspace $ws1 gaps inner 10
 workspace $ws1 gaps outer 5
@@ -55,7 +55,7 @@ workspace $ws10 gaps outer 0
 workspace_auto_back_and_forth yes
 force_display_urgency_hint 0 ms
 focus_on_window_activation urgent
-smart_borders no_gaps
+#smart_borders no_gaps
 
 floating_minimum_size -1 x -1
 floating_maximum_size -1 x -1

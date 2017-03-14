@@ -1,0 +1,2 @@
+export 
+MONGO_URL=mongodb://localhost/starter_node_express
