@@ -8,6 +8,7 @@ packer --noconfirm --noedit -S \
   gsimplecal \
   feh \
   xdotool \
+  git-lfs \
   thunar \
   thunar-archive-plugin \
   file-roller \
