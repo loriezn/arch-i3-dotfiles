@@ -14,7 +14,7 @@ packer --noconfirm --noedit -S \
   file-roller \
   tumbler \
   eog \
-  numix-themes \
+  numix-gtk-theme \
   numix-icon-theme-git \
   aspell-en \
   evince \

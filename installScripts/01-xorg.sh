@@ -3,13 +3,22 @@ set -e
 
 echo "Installing window manager dependencies..."
 packer --noconfirm --noedit -S \
-	xorg-server \
+  xorg-server \
   xorg-xinit \
   xorg-server-utils \
   xf86-video-intel \
-  mesa-libgl \
-  lib32-mesa-libgl \
-	xcb-util-xrm \
+  python2-mako \
+  llvm-svn \
+  libclc \ 
+  clang-svn \
+  glproto \
+  dri2proto \
+  dri3proto \
+  presentproto \
+  vulkan-icd0loader \
+  mesa-libgl-git \
+  lib32-mesa-libgl-git \
+  xcb-util-xrm \
   xedgewarp-git \
   xcb-util-keysyms \
   xcb-util-wm \

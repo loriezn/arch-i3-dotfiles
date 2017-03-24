@@ -48,7 +48,7 @@ alias reboot='sudo reboot'
 alias qq='cmatrix -a -C yellow -b -s -u 7'
 alias matrix='cmatrix -a -C yellow -b -s -u 7'
 alias neo='cmatrix -a -C yellow -b -s -u 7'
-
+alias sdl='bash /home/loki/.scripts/sdl.sh'
 # File Utils
 alias cp="sudo -u $USER cp -av"
 alias ln="sudo -u $USER ln -s"
